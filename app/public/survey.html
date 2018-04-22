@@ -217,11 +217,12 @@
 
     <br>
     <br>
+
     <!-- 
 7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
    * The modal should display both the name and picture of the closest match.  -->
 
-<!-- 
+    <!-- 
   This is how you toggle the modal using jQuery;
   $('#myModal').modal();
 -->
@@ -255,6 +256,42 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+
+
+
+    $('#submit').on('click', function () {
+      
+      var object = {
+      name: $('#name').val().trim(),
+      photo: $('#photo').val().trim(),
+      scores: [
+        parseFloat($('#q1').val()),
+        parseFloat($('#q2').val()),
+        parseFloat($('#q3').val()),
+        parseFloat($('#q4').val()),
+        parseFloat($('#q5').val()),
+        parseFloat($('#q6').val()),
+        parseFloat($('#q7').val()),
+        parseFloat($('#q8').val()),
+        parseFloat($('#q9').val()),
+        parseFloat($('#q10').val())
+      ]
+    }
+      
+      console.log(object);
+      
+      // $.post("http://localhost:8080/api/friends", object);
+
+    })
+
+
+
+
+
+
+  </script>
 
 </body>
 
