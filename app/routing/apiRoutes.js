@@ -35,10 +35,63 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
 
-    friendData.push(req.body);
+    
+    console.log(req.body.scores);
     
     res.json(friendData);
 
+    var highest;
+
+    // create array
+
+    // loop through friends
+
+    // get totalDifference score from each friend and place into array
+
+    // find lowest difference by checking first array created
+
+    var highDifference = 100;
+    var compatible;
+    var loopDifference = 0;
+
+    // loop through each friend
+    for (var i = 0; i < friendData.length; i++) {
+
+      // loop through each friends scores
+      for (var j = 0; j < friendData[i].scores.length; j++) {
+        
+        // find difference amount
+        loopDifference += Math.abs(req.body.scores[j] - friendData[i].scores[j])
+        
+        
+      }
+
+      // // if the totalDifference was lower for this friend, then change the highest friend
+      if (loopDifference < highDifference) {
+        // changes the best match
+        highDifference = loopDifference;
+        
+        compatible = i;
+      }
+
+      console.log(j);
+      console.log(typeof j);
+      
+
+      // reset loop difference
+      loopDifference = 0;
+    }
+
+    console.log(compatible);
+    
+    console.log(friendData[compatible].name);
+    
+
+    friendData.push(req.body);
+
+    // set outside variable
+
+    // loop through array, if 
 // 6. Determine the user's most compatible friend using the following as a guide:
 
 //    * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).

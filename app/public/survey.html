@@ -262,7 +262,7 @@
 
 
     $('#submit').on('click', function () {
-      
+
       var object = {
       name: $('#name').val().trim(),
       photo: $('#photo').val().trim(),
@@ -279,12 +279,10 @@
         parseFloat($('#q10').val())
       ]
     }
-      
-      console.log(object);
-      
-      // $.post("http://localhost:8080/api/friends", object);
 
-    })
+      $.post("http://localhost:8080/api/friends", object);
+
+    });
 
 
 
