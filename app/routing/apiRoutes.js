@@ -37,8 +37,6 @@ module.exports = function(app) {
 
     
     console.log(req.body.scores);
-    
-    res.json(friendData);
 
     var highest;
 
@@ -74,19 +72,14 @@ module.exports = function(app) {
         compatible = i;
       }
 
-      console.log(j);
-      console.log(typeof j);
-      
-
       // reset loop difference
       loopDifference = 0;
     }
 
     console.log(compatible);
-    
     console.log(friendData[compatible].name);
     
-
+    res.json(friendData[compatible]);
     friendData.push(req.body);
 
     // set outside variable

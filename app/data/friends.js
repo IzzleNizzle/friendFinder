@@ -20,8 +20,8 @@
 // ```
 
 var friends = [{
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "name":"Cookie Monster",
+  "photo":"https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fcookie-monster-bakes-cookies-ft-blog1116.jpg%3Fitok%3D5cjKiFp0&w=700&q=85",
   "scores":[
       5,
       1,
