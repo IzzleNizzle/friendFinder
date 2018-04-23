@@ -6,7 +6,7 @@ In this app you can answer a magical survey and you will be shown the results of
 
 :boom:
 
-## How does it do it? :curious:
+## How does it work? :confused:
 
 1. You fill out the magical survey and we analyze your personaly traits.
 
